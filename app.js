@@ -39,11 +39,11 @@ merge_fields : {
   ]
 };
 
-var jsonData = JSON.stringify(data); //b7fa57a04f5d551a6d4b3af5c741369b-us10 ,,,,b517583bd9
-const url ="https://us10.api.mailchimp.com/3.0/lists/b517583bd9";
+var jsonData = JSON.stringify(data);
+ const url ="https://us10.api.mailchimp.com/3.0/lists/{list_id}";
 const options = {
 method: "POST",
-auth: "dafe:b7fa57a04f5d551a6d4b3af5c741369b-us10"
+auth: "dafe:xxxxxxxxxxxxxxxxxxxxxxx-us10"
 }
 const request= https.request(url, options, function(response){
 
